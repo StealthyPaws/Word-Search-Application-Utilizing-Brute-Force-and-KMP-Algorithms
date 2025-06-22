@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Text Search</title>
+</head>
+<body>
+    <h1>Text Search</h1>
+    <form action="/search" method="POST">
+        <label for="pattern">Search Pattern:</label>
+        <input type="text" id="pattern" name="pattern" required>
+        <br>
+        <label for="case_sensitive">Case Sensitive:</label>
+        <input type="checkbox" id="case_sensitive" name="case_sensitive">
+        <br>
+        <label for="as_whole">Whole Word Matching:</label>
+        <input type="checkbox" id="as_whole" name="as_whole" checked>
+        <br>
+        <label for="algorithm">Select Algorithm:</label>
+        <select name="algorithm">
+            <option value="brute_force">Brute Force</option>
+            <option value="kmp">KMP</option>
+        </select>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
